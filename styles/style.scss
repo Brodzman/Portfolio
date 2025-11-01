@@ -1,0 +1,50 @@
+$offBlack: rgb(21, 21, 21);
+$green: rgb(78, 255, 160);
+$darkGrey: rgb(36, 36, 36);
+$lightGrey: rgb(217, 217, 217);
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url(../fonts/static/SpaceGrotesk-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url(../fonts/static/SpaceGrotesk-Medium.ttf);
+    font-weight: medium;
+}
+
+@mixin headingXL {
+    font-family: 'SpaceGrotesk';
+    font-weight: bold;
+    font-size: 88px;
+    color: white;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+}
+
+@mixin headingL {
+    font-family: 'SpaceGrotesk';
+    font-weight: bold;
+    font-size: 48px;
+    color: white;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+}
+
+@mixin headingM {
+    font-family: 'SpaceGrotesk';
+    font-weight: medium;
+    font-size: 24px;
+    color: white;
+    line-height: 32px;
+}
+
+@mixin paragraph {
+    font-family: 'SpaceGrotesk';
+    font-weight: medium;
+    font-size: 18px;
+    color: white;
+    line-height: 28px;
+}
