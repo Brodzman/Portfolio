@@ -268,8 +268,7 @@ form {
 }
 
 .form-group textarea {
-    resize: none;
-    height: 1.2em;
+    min-height: 5rem;
     overflow: hidden;
 }
 
