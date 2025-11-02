@@ -1,7 +1,7 @@
 $offBlack: rgb(21, 21, 21);
 $green: rgb(78, 255, 160);
 $darkGrey: rgb(36, 36, 36);
-$lightGrey: rgb(217, 217, 217);
+$Grey: rgb(217, 217, 217);
 
 @font-face {
     font-family: 'SpaceGrotesk';
@@ -12,7 +12,7 @@ $lightGrey: rgb(217, 217, 217);
 @font-face {
     font-family: 'SpaceGrotesk';
     src: url(../fonts/static/SpaceGrotesk-Medium.ttf);
-    font-weight: medium;
+    font-weight: normal;
 }
 
 @mixin headingXL {
@@ -35,7 +35,7 @@ $lightGrey: rgb(217, 217, 217);
 
 @mixin headingM {
     font-family: 'SpaceGrotesk';
-    font-weight: medium;
+    font-weight: bold;
     font-size: 24px;
     color: white;
     line-height: 32px;
@@ -43,8 +43,149 @@ $lightGrey: rgb(217, 217, 217);
 
 @mixin paragraph {
     font-family: 'SpaceGrotesk';
-    font-weight: medium;
+    font-weight: normal;
     font-size: 18px;
     color: white;
     line-height: 28px;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: inherit;
+}
+
+body {
+    background-color: $offBlack;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.wrapper {
+    // width: 1080px;
+    // margin: 0 auto;
+
+    width: 70%;
+}
+
+.sub-heading, #introduction{
+    @include headingXL;
+}
+
+#description {
+    @include paragraph
+}
+
+.my-name {
+    font-family: 'SpaceGrotesk';
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    line-height: 32px;
+    letter-spacing: -0.44px;
+}
+
+nav {
+    word-spacing: 32px;
+}
+
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-button {
+    font-family: 'SpaceGrotesk';
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    line-height: 26px;
+    letter-spacing: 2.29px;
+}
+
+.button-line {
+    border: none;
+    height: 2px;
+    background-color: $green;
+    width: 100%;
+}
+
+.contact-button-container {
+    display: inline-block;
+}
+
+.proj-title {
+    @include headingM;
+}
+
+.proj-description {
+    @include paragraph;
+}
+
+#project-cards {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+#contact-container {
+    background-color: $darkGrey;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 80px;
+}
+
+#contact-fill {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-description .sub-heading {
+    margin: 0;
+}
+
+#contact-text {
+    @include paragraph;
+}
+
+#contact-form {
+    font-family: 'SpaceGrotesk';
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
 }

@@ -6,5 +6,163 @@
 @font-face {
   font-family: "SpaceGrotesk";
   src: url(../fonts/static/SpaceGrotesk-Medium.ttf);
-  font-weight: medium;
+  font-weight: normal;
+}
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: inherit;
+}
+
+body {
+  background-color: rgb(21, 21, 21);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.wrapper {
+  width: 70%;
+}
+
+.sub-heading, #introduction {
+  font-family: "SpaceGrotesk";
+  font-weight: bold;
+  font-size: 88px;
+  color: white;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+}
+
+#description {
+  font-family: "SpaceGrotesk";
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  line-height: 28px;
+}
+
+.my-name {
+  font-family: "SpaceGrotesk";
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  line-height: 32px;
+  letter-spacing: -0.44px;
+}
+
+nav {
+  word-spacing: 32px;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-button {
+  font-family: "SpaceGrotesk";
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+}
+
+.button-line {
+  border: none;
+  height: 2px;
+  background-color: rgb(78, 255, 160);
+  width: 100%;
+}
+
+.contact-button-container {
+  display: inline-block;
+}
+
+.proj-title {
+  font-family: "SpaceGrotesk";
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  line-height: 32px;
+}
+
+.proj-description {
+  font-family: "SpaceGrotesk";
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  line-height: 28px;
+}
+
+#project-cards {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+#contact-container {
+  background-color: rgb(36, 36, 36);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-top: 80px;
+}
+
+#contact-fill {
+  display: flex;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-description .sub-heading {
+  margin: 0;
+}
+
+#contact-text {
+  font-family: "SpaceGrotesk";
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  line-height: 28px;
+}
+
+#contact-form {
+  font-family: "SpaceGrotesk";
+  font-weight: normal;
+  font-size: 16px;
+  color: white;
+  line-height: 26px;
+  letter-spacing: -0.22px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */

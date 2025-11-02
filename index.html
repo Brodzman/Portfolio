@@ -8,83 +8,105 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <h4>Brodie Thomassen</h4>
-        <nav>
-            <img alt="Github" src="">
-            <img alt="LinkedIn" src="">
-        </nav>
-    </header>
-    <main>
-        <article id="intro-container">
-            <h1 id="introduction"></h1>
-            <p id="description"></p>
-            <button id="contact">Contact Me</button>
-        </article>
-        <article id="skills-container">
-            <div class="card">
-                <h3 class="skill"></h3>
-                <p class="experience"></p>
-            </div>
-            <div class="card">
-                <h3 class="skill"></h3>
-                <p class="experience"></p>
-            </div>
-            <div class="card">
-                <h3 class="skill"></h3>
-                <p class="experience"></p>
-            </div>
-            <div class="card">
-                <h3 class="skill"></h3>
-                <p class="experience"></p>
-            </div>
-            <div class="card">
-                <h3 class="skill"></h3>
-                <p class="experience"></p>
-            </div>
-            <div class="card">
-                <h3 class="skill"></h3>
-                <p class="experience"></p>
-            </div>
-        </article>
-        <article id="projects-container">
-            <h2 class="sub-heading">Projects</h2>
-            <section id="project-cards">
-                <div class="proj-card">
-                    <img class="proj-img" src="./images/LoopPaulThumbnail.png" alt="project thumbnail" width="540" height="400">
-                    <h3 class="proj-title">Loop Paul</h3>
-                    <p class="proj-description">Completed as an entry in the 2025 Epic MegaJam</p>
+    <div class="wrapper">
+        <header>
+            <h4 class="my-name">Brodie Thomassen</h4>
+            <nav>
+                <img alt="Github" src="./images/icon-github.svg">
+                <img alt="LinkedIn" src="./images/icon-linkedin.svg">
+            </nav>
+        </header>
+        <main>
+            <article id="intro-container">
+                <h1 id="introduction">Nice to meet you!<br>
+                    I'm Brodie Thomassen
+                </h1>
+                <p id="description">Based in Australia, I'm a game designer and programmer, with extrememe love and curiosity in the field</p>
+                <div class=contact-button-container>
+                    <button class="contact-button">Contact Me</button>
+                    <hr class="button-line">
                 </div>
-            </section>
-        </article>
-        <article id="contact-container">
-            <div id="contact-fll">
-                <div id="contact-description">
-                    <h2 class="sub-heading">Contact</h2>
-                    <p>Please feel free to reach out to me</p>
+            </article>
+            <article id="skills-container">
+                <div class="card">
+                    <h3 class="skill"></h3>
+                    <p class="experience"></p>
                 </div>
-                <div id="contact-form">
-                    <form>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name">
+                <div class="card">
+                    <h3 class="skill"></h3>
+                    <p class="experience"></p>
+                </div>
+                <div class="card">
+                    <h3 class="skill"></h3>
+                    <p class="experience"></p>
+                </div>
+                <div class="card">
+                    <h3 class="skill"></h3>
+                    <p class="experience"></p>
+                </div>
+                <div class="card">
+                    <h3 class="skill"></h3>
+                    <p class="experience"></p>
+                </div>
+                <div class="card">
+                    <h3 class="skill"></h3>
+                    <p class="experience"></p>
+                </div>
+            </article>
+            <article id="projects-container">
+                <h2 class="sub-heading">Projects</h2>
+                <section id="project-cards">
+                    <div class="proj-card">
+                        <img class="proj-img" src="./images/LoopPaulThumbnail.png" alt="Lool Paul thumbnail" width="540" height="400">
+                        <h3 class="proj-title">Loop Paul</h3>
+                        <p class="proj-description">Completed as an entry in the 2025 Epic MegaJam</p>
+                    </div>
+                    <div class="proj-card">
+                        <img class="proj-img" src="./images/MM_titlelogo.png" alt="Muprphy's Mayhem thumbnail" width="540" height="400">
+                        <h3 class="proj-title">Murphy's Mayhem</h3>
+                        <p class="proj-description">Completed as an entry in the Brackey's Game Jam 2025.1</p>
+                    </div>
+                    <div class="proj-card">
+                        <img class="proj-img" src="./images/GrannysIcon.png" alt="Granny's Gamble thumbnail" width="540" height="400">
+                        <h3 class="proj-title">Granny's Gamble</h3>
+                        <p class="proj-description">Completed as an entry in the 2025 Epic MegaJam</p>
+                    </div>
+                </section>
+            </article>
+            <article id="contact-container">
+                <div class="wrapper">
+                <div id="contact-fill">
+                    <div id="contact-description">
+                        <h2 class="sub-heading">Contact</h2>
+                        <p id="contact-text">Please feel free to reach out to me</p>
+                    </div>
+                    <div id="contact-form">
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
 
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" cols="30"></textarea>
-                    </form>
-                    <button>Send Message</button>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+                        </form>
+                        <div class="contact-button-container">
+                            <button class="contact-button">Send Message</button>
+                            <hr class="button-line">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <footer>
-                <h4>Brodie Thomassen</h4>
-                <nav>
-                    <img alt="Github" src="">
-                    <img alt="LinkedIn" src="">
-                </nav>
-            </footer>
-        </article>
-    </main>
+                <footer>
+                    <h4 class="my-name">Brodie Thomassen</h4>
+                    <nav>
+                        <img alt="Github" src="./images/icon-github.svg">
+                        <img alt="LinkedIn" src="./images/icon-linkedin.svg">
+                    </nav>
+                </footer>
+                </div>
+            </article>
+        </main>
+    </div>
 </body>
 </html>
